@@ -1,0 +1,135 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --blue: hsl(212, 86%, 64%);
+    --cayan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+
+    --darkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --lightGray: hsl(0, 0%, 98%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header #first-heading {
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    margin: 0;
+}
+
+.header #second-heading {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    margin: 0;
+}
+
+.header p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card-wrapper {
+    height: 70vh; width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+} 
+
+.cards img {
+    height: 40px; width: 40px;
+    align-self: flex-end;
+    margin: 20px 20px 10px 10px;
+}
+
+.cards {
+    height: 160px;
+    width: 220px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    box-shadow:  0px 0px 20px -5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;  
+}
+
+.cards h4 {
+    color: var(--darkBlue);
+    font-weight: 600;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.cards p {
+    padding: 0;
+    margin: 0;
+    font-size: .7em;
+    color: var(--grayishBlue);
+}
+
+#supervisor {
+    border-top: 3px solid var(--cayan);
+}
+
+#team-builder {
+    border-top: 3px solid var(--red);
+}
+
+#karma {
+    border-top: 3px solid var(--orange);
+}
+
+#calculator {
+    border-top: 3px solid var(--blue);
+}
+
+
+
+
+@media only screen and (max-width:375px) {
+    .header {
+        font-size: .7em;
+        margin-bottom: 40px;
+        
+    }
+
+    .header:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        margin-left: 10%;
+        top: 30vh;
+    }
+
+
+    .cards {
+        margin: 10px;
+    }
+
+}
